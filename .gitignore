@@ -1,0 +1,71 @@
+# Node build artifacts and dependencies (both projects)
+**/node_modules/
+**/dist/
+**/build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tests / coverage
+coverage/
+.nyc_output/
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# VSCode - keep workspace settings but ignore other local files
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# dotenv environment variable files (at any level)
+**/.env
+**/.env.*
+
+# Temp
+.temp/
+.tmp/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Prisma generated client and runtime artifacts (ignore generated clients if you don't want to commit them)
+# Adjust if you prefer to commit generated/prisma client files.
+**/generated/
+**/generated/prisma/
+**/.prisma/
+**/query_engine-*
+**/*.dll.node
+
+# Misc
+.cache/
+coverage-report/
+
+# Package manager lockfiles: keep or ignore depending on repo policy
+# If each project is a separate package you may want to keep their lockfiles; adjust as needed.
+# package-lock.json
+# yarn.lock

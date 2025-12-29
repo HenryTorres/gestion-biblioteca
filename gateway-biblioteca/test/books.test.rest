@@ -1,0 +1,42 @@
+@host = http://localhost:3000
+
+GET http://localhost:3000/books HTTP/1.1
+###
+
+GET http://localhost:3000/authors HTTP/1.1
+###
+
+GET http://localhost:3000/users HTTP/1.1
+###
+
+POST  {{host}}/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Los Heraldos Negros",
+    "author_id": 2,
+    "year": 1965,
+    "isbn": "258425",
+    "stock": 10,
+    "isActive": true
+}
+###
+
+PUT   {{host}}/books/6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":6,
+    "title": "Tradiciones Peruanas",
+    "author": "Ricardo P.",
+    "year": 1965,
+    "ISBN": "159753",
+    "stock": 10,
+    "isActive": true
+}
+
+
+###
+
+DELETE   {{host}}/books/6 HTTP/1.1
+###
